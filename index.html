@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Sora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/944c0528d8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main>
+        <nav>
+          <ul>
+            <li>
+              <a class="underline" href="#skills">Skills</a>
+            </li>
+            <li>
+              <a class="underline" href="#projects">Projects</a>
+            </li>
+            <li>
+              <a class="underline" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section id="hero">
+          <img
+            class="headshot"
+            src="headshot.png"
+            alt="Photo of Estrela's face infront of a brick wall"
+          />
+          <h1>Hello! I'm Estrela Espiridião</h1>
+          <p>a Lisbon based Portuguese developer.</p>
+        </section>
+        <div id="skills" class="space"></div>
+        <section class="skills">
+          <h2>My Skills</h2>
+          <ul>
+            <li class="card"><i class="fa-brands fa-html5"></i>HTML</li>
+            <li class="card"><i class="fa-brands fa-css3-alt"></i>CSS</li>
+            <li class="card">
+              <i class="fa-brands fa-square-js"></i>JavaScript
+            </li>
+            <li class="card"><i class="fa-brands fa-react"></i>React.js</li>
+            <li class="card"><i class="fa-brands fa-git-alt"></i>Git(hub)</li>
+            <li class="card">
+              <i class="fa-brands fa-bootstrap"></i>Bootstrap
+            </li>
+          </ul>
+        </section>
+        <div id="projects" class="space"></div>
+        <section>
+          <h2>Projects</h2>
+          <div class="grid">
+            <div class="card">
+              <a
+                class="card-link"
+                href="https://vanilla-meteo.netlify.app/"
+                target="_blank"
+                ><img
+                  src="projects/weather.jpg"
+                  onmouseenter="this.src='projects/weather.gif'"
+                  onmouseout="this.src='projects/weather.jpg'"
+                />
+                <h3>Weather App</h3>
+                <p>Web app with vanilla JavaScript, HTML5, CSS3, Bootstrap</p>
+              </a>
+            </div>
+            <div class="card">
+              <a
+                class="card-link"
+                href="https://sdp.netlify.app/"
+                target="_blank"
+                ><img
+                  src="projects/sdp.jpg"
+                  onmouseenter="this.src='projects/sdp.gif'"
+                  onmouseout="this.src='projects/sdp.jpg'"
+                />
+                <h3>International Clown Festival</h3>
+                <p>Freelance Client | HTML5, CSS3, JavaScript</p>
+              </a>
+            </div>
+            <div class="card">
+              <a
+                class="card-link"
+                href="https://quadras-da-dixa.netlify.app/"
+                target="_blank"
+                ><img
+                  src="projects/quadras.jpg"
+                  onmouseenter="this.src='projects/quadras.gif'"
+                  onmouseout="this.src='projects/quadras.jpg'"
+                />
+                <h3>Traditional Portuguese Rhymes</h3>
+                <p>
+                  A gift for my mother, with a touch of portuguese tradition.
+                  Used HTML5, CSS3, JavaScript
+                </p>
+              </a>
+            </div>
+            <div class="card">
+              <a
+                class="card-link"
+                href="https://larovski.netlify.app/"
+                target="_blank"
+                ><img
+                  src="projects/artist.jpg"
+                  onmouseenter="this.src='projects/artist.gif'"
+                  onmouseout="this.src='projects/artist.jpg'"
+                />
+                <h3>Artist's Portfolio</h3>
+                <p>Freelance client | HTML5, CSS3, JavaScript</p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <div class="space"></div>
+        <section id="contacts">
+          <h2>Contact me</h2>
+          <ul>
+            <li class="card">
+              <a href="https://www.twitter.com/estrela_palma" target="_blank">
+                <i class="fa-brands fa-square-twitter"></i>
+                Twitter
+              </a>
+            </li>
+            <li class="card">
+              <a href="https://github.com/EstrelaE" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                Github
+              </a>
+            </li>
+            <li class="card">
+              <a
+                href="https://www.linkedin.com/in/estrela-palma/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+                Linkedin
+              </a>
+            </li>
+          </ul>
+          <div class="card email">
+            <a href="mailto:estrelaespiridiao@gmail.com" target="_blank">
+              <i class="fa-solid fa-at"></i>
+            </a>
+            estrelaespiridiao@gmail.com
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

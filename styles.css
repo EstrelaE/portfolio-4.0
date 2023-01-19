@@ -1,0 +1,187 @@
+:root {
+  --accent-color: #ffae00;
+  --secondary-color: #bd4932;
+  --main-color: rgb(16, 92, 101);
+  --card-transparent: rgba(255, 255, 255, 0.578);
+  --image-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Sora", sans-serif;
+  font-size: 1.8rem;
+  background-color: var(--main-color);
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+h2 {
+  border-bottom: 4px solid var(--accent-color);
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  height: 100%;
+  background-color: #faeee7;
+  margin: 45px;
+  border-radius: 5px;
+}
+
+main {
+  padding: 5px 40px 40px 40px;
+}
+
+nav {
+  font-family: "Monroe", sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 7px;
+  width: 100%;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  padding: 0 12px;
+}
+
+.underline {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.underline:hover {
+  border-bottom: 4px solid var(--accent-color);
+  transition: 5ms ease-in-out;
+}
+
+#hero {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headshot {
+  width: 30rem;
+  border-radius: 50%;
+  border: 8px double var(--accent-color);
+  box-shadow: var(--image-shadow);
+}
+
+#hero p {
+  font-size: 2.5rem;
+  margin: 0;
+  border-bottom: 4px solid var(--accent-color);
+}
+
+.space {
+  height: 65px;
+  width: 100%;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.skills li {
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  padding-inline: 1em;
+  border-radius: 0.5em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-block: 1em;
+  margin: 5px;
+  background-color: var(--card-transparent);
+  box-shadow: var(--image-shadow);
+  text-align: center;
+}
+
+.card img:hover {
+  box-shadow: var(--image-shadow);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#contacts ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#contacts .card a {
+    display: flex;
+    flex-flow: column;
+    row-gap: 1rem;
+}
+
+#contacts .card.email{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+.card.email i{
+    margin-right: 1rem;
+}
+
+i{
+    font-size: 3.5rem;
+}
+
+a i:hover{
+    color: var(--accent-color);
+    transition: .2s ease-in-out;
+}
