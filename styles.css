@@ -2,6 +2,7 @@
   --accent-color: #ffae00;
   --secondary-color: #bd4932;
   --main-color: rgb(16, 92, 101);
+  --main-color-transparent: rgba(16, 92, 101, 0.881);
   --card-transparent: rgba(255, 255, 255, 0.578);
   --image-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -24,6 +25,7 @@ body {
   font-family: "Sora", sans-serif;
   font-size: 1.8rem;
   background-color: var(--main-color);
+  cursor: default;
 }
 
 h1 {
@@ -41,14 +43,28 @@ a {
   text-decoration: none;
 }
 
+a i:hover {
+  color: var(--accent-color);
+  transition: 0.2s ease-in-out;
+}
+
+i {
+  font-size: 3.5rem;
+}
+
 ul {
   list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 .wrapper {
   height: 100%;
   background-color: #faeee7;
-  margin: 45px;
+  margin: 25px;
   border-radius: 5px;
 }
 
@@ -89,7 +105,7 @@ nav li {
 
 #hero {
   text-align: center;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,52 +152,58 @@ nav li {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-block: 1em;
   margin: 5px;
   background-color: var(--card-transparent);
   box-shadow: var(--image-shadow);
   text-align: center;
+  height: 100%;
 }
 
 .card img:hover {
   box-shadow: var(--image-shadow);
 }
 
-img {
-  display: block;
-  width: 100%;
+.card .button {
+  border: 1px solid var(--main-color);
+  padding: 1rem;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 5px;
 }
 
-#contacts ul{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 1.5rem;
+.card .button:hover {
+  background-color: var(--main-color-transparent);
+  border: 1px solid var(--main-color-transparent);
+}
+
+.projects .card p {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+#contacts ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
 #contacts .card a {
-    display: flex;
-    flex-flow: column;
-    row-gap: 1rem;
+  display: flex;
+  flex-flow: column;
+  row-gap: 1rem;
 }
 
-#contacts .card.email{
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;    
+#contacts .card.email {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.card.email i{
-    margin-right: 1rem;
-}
-
-i{
-    font-size: 3.5rem;
-}
-
-a i:hover{
-    color: var(--accent-color);
-    transition: .2s ease-in-out;
+.card.email i {
+  margin-right: 1rem;
 }
