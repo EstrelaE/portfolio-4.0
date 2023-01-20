@@ -44,7 +44,7 @@ a {
 }
 
 a i:hover {
-  color: var(--accent-color);
+  color: var(--main-color-transparent);
   transition: 0.2s ease-in-out;
 }
 
@@ -183,10 +183,16 @@ nav li {
   margin-bottom: 40px;
 }
 
+#contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #contacts ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-size: 1.5rem;
 }
